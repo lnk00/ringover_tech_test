@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>todover</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0/modern-normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/font.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <div id="app-container">
+    <div id="error-container"></div>
+    <img id="logo" src="images/logo.svg" alt="company logo" />
+    <form id="search-form">
+      <span class="icon-search"></span>
+      <input type="text" id="search-input" name="search" placeholder="Search a task">
+    </form>
+    <div id="task-container" class="container">
+      <form id="add-task-form">
+        <div id="label-row">
+          <input type="text" id="add-task-input" name="add-task" placeholder="Add a new task... " tabindex="1">
+          <button>
+            <span class="icon-arrow-right2"></span>
+          </button>
+        </div>
+        <input type="text" id="add-desc-input" name="add-desc" placeholder="Description" tabindex="2">
+      </form>
+      <div id="task-list"></div>
+    </div>
+  </div>
+  <script src="app.js" type="module"></script>
+</body>
+
+</html>
